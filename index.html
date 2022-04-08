@@ -66,10 +66,10 @@ $ git checkout gh-pages
 
   <script>
 		function jsError1() {
-			throw null;
+			throw undefined;
 		}
     function jsError2() {
-			throw "Index page error";
+			throw "js error";
 		}
 		function httpError() {
 			fetch("https://httpstat.us/500");
