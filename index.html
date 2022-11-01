@@ -8,7 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-	  <script>
+<!-- 	  <script>
   (function(n,i,v,r,s,c,x,z){x=window.AwsRumClient={q:[],n:n,i:i,v:v,r:r,c:c};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.head.getElementsByTagName('script')[0]);})(
     'cwr',
     '2ff99876-2242-41d0-9a0b-0cf46d992968',
@@ -25,7 +25,7 @@
       enableXRay: false
     }
   );
-</script>
+</script> -->
 <!-- 	  <script>
   (function(n,i,v,r,s,c,x,z){x=window.AwsRumClient={q:[],n:n,i:i,v:v,r:r,c:c};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.head.getElementsByTagName('script')[0]);})(
     'cwr',
@@ -87,6 +87,30 @@
 		cwr('recordPageView', pageAttribute);
 
 </script> -->
+	  <script>
+		  const pageAttribute = {
+			pageId: window.location.hash,
+			pageTags: ["tst-group-110", "tst-group-222"]
+		};
+  (function(n,i,v,r,s,c,x,z){x=window.AwsRumClient={q:[],n:n,i:i,v:v,r:r,c:c};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.head.getElementsByTagName('script')[0]);})(
+    'cwr',
+    '51cdf2ed-6756-496f-8a39-b09cb8808f1c',
+    '1.0.0',
+    'us-east-1',
+    'https://client.rum.us-east-1.amazonaws.com/1.10.0/cwr.js',
+    {
+      sessionSampleRate: 1,
+      guestRoleArn: "arn:aws:iam::750664202209:role/RUM-Monitor-us-east-1-750664202209-4984191237661-Unauth",
+      identityPoolId: "us-east-1:5c04d10c-1e22-42f1-81cc-c05cdd45b711",
+      endpoint: "https://dataplane.rum.us-east-1.amazonaws.com",
+      telemetries: ["performance","errors","http"],
+      allowCookies: true,
+      enableXRay: false,
+	    	          disableAutoPageView: true
+    }
+  );
+		  		cwr('recordPageView', pageAttribute);
+</script>
 </head>
   <body>
     <section class="page-header">
