@@ -111,7 +111,7 @@
   );
 		  		cwr('recordPageView', pageAttribute);
 </script> -->
-	 <script>
+<!-- 	 <script>
 		 const pageAttribute = {
 			pageId: window.location.hash,
 			pageTags: ["tst-group-110", "tst-group-222"]
@@ -134,6 +134,24 @@
     }
   );
 		 		  		cwr('recordPageView', pageAttribute);
+</script> -->
+	  <script>
+  (function(n,i,v,r,s,c,x,z){x=window.AwsRumClient={q:[],n:n,i:i,v:v,r:r,c:c};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.head.getElementsByTagName('script')[0]);})(
+    'cwr',
+    'ca8d12dd-c5db-49a8-886d-89b7857709f4',
+    '1.0.0',
+    'us-west-2',
+    'https://client.rum.us-east-1.amazonaws.com/1.14.0/cwr.js',
+    {
+      sessionSampleRate: 1,
+      guestRoleArn: "arn:aws:iam::848001288726:role/RUM-Monitor-us-west-2-848001288726-0169541130961-Unauth",
+      identityPoolId: "us-west-2:b7108b20-9906-48cc-86d4-ca3f99f73fc5",
+      endpoint: "https://dataplane.rum.us-west-2.amazonaws.com",
+      telemetries: ["performance","errors","http"],
+      allowCookies: true,
+      enableXRay: false
+    }
+  );
 </script>
 </head>
   <body>
