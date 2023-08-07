@@ -135,7 +135,7 @@
   );
 		 		  		cwr('recordPageView', pageAttribute);
 </script> -->
-	  <script>
+<!-- 	  <script>
   (function(n,i,v,r,s,c,x,z){x=window.AwsRumClient={q:[],n:n,i:i,v:v,r:r,c:c};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.head.getElementsByTagName('script')[0]);})(
     'cwr',
     'ca8d12dd-c5db-49a8-886d-89b7857709f4',
@@ -150,6 +150,24 @@
       telemetries: ["performance","errors","http"],
       allowCookies: true,
       enableXRay: false
+    }
+  );
+</script> -->
+<script>
+  (function(n,i,v,r,s,c,x,z){x=window.AwsRumClient={q:[],n:n,i:i,v:v,r:r,c:c};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.head.getElementsByTagName('script')[0]);})(
+    'cwr',
+    '66adc538-e9db-4b9d-83a8-5d8076d440de',
+    '1.0.0',
+    'us-east-1',
+    'https://client.rum.us-east-1.amazonaws.com/1.14.0/cwr.js',
+    {
+      sessionSampleRate: 1,
+      guestRoleArn: "arn:aws:iam::511404824078:role/RUM-Monitor-us-east-1-511404824078-9049876441961-Unauth",
+      identityPoolId: "us-east-1:cd57cd77-6756-4476-b8ca-731874f8f062",
+      endpoint: "https://dataplane.rum.us-east-1.amazonaws.com",
+      telemetries: ["performance","errors","http"],
+      allowCookies: true,
+      enableXRay: true
     }
   );
 </script>
